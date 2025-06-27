@@ -1,6 +1,15 @@
 [package]
 name = "interpreter"
 version = "0.1.0"
+authors = ["Tobin C. Harding <me@tobin.cc>"]
+license = "CC0-1.0"
+repository = "https://github.com/tcharding/interpreter"
+description = "A toy Bitcoin script interpreter"
+categories = ["cryptography::cryptocurrencies"]
+keywords = [ "bitcoin" ]
+readme = "../README.md"
 edition = "2021"
 
 [dependencies]
+anyhow = { version = "1" }
+bitcoin = { git = "https://github.com/rust-bitcoin/rust-bitcoin", features = [] }
